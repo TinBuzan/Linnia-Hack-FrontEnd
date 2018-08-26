@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Dependancies -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Tab Icon -->
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- End Dependancies -->
+  </head>
+
+  <body>
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">DataBroker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="PaymentsHistory.html">Payout History</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Toolbar -->
+
+    <!-- Start Main Content -->
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h2>Payment History</h2>
+            <div class="card card-body">
+              <script language="JavaScript">
+              // Create the array and fill it with data.
+              var payments = [ { name: "Object 1"}, { name: "Object 2"}, { name: "Object 3"}];
+              // Define a loop to access each array element
+              // and display it onscreen.
+              for (i = 0; i < payments.length; i++)
+              {
+                document.write(
+                  "Payment " + i + " = " +
+                  payments[i].name + "<br />");
+              }
+            </script>
+          </div>
+        </div>
+        <!-- End Container -->
+      </div>
+    </main>
+    <!-- End Main Content -->
+
+    <footer class="container">
+      <p>� DataBroker 2018</p>
+    </footer>
+
+    <!-- Imports
+    ================================================== -->
+    <!-- Linnia Script Import -->
+    <script src="https://cdn.jsdelivr.net/npm/@linniaprotocol/linnia-js-script-tag@0.1.1/dist/index.min.js"></script>
+    <!-- My Custom Scripts -->
+    <script src="./Index_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Index_files/popper.min.js.download"></script>
+    <script src="./Index_files/bootstrap.min.js.download"></script>
+    <script type="text/javascript" src="js/customJS.js"></script>
+    <!-- Bootstrap Import -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body></html>
